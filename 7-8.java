@@ -29,8 +29,6 @@ class Ex {
 		scanner.close();
 	}
 	
-
-	
 	void search(Scanner scanner) {
 		Set<String> keys = hashMap.keySet();
 		Iterator<String> it = keys.iterator();
