@@ -10,8 +10,8 @@ class MyStack<T> implements IStack {
 	Object[] stack;
 	
 	public MyStack() {
-		tos = 0;
-		stack = new Object[10];
+		this.tos = 0;
+		this.stack = new Object[10];
 	}
 
 	@Override
@@ -19,7 +19,7 @@ class MyStack<T> implements IStack {
 		if(tos == 0) {
 			return null;
 		}
-		return stack[--tos];
+		return (T) stack[--tos];
 	}
 
 	@Override
