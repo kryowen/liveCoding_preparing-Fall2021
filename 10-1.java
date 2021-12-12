@@ -3,6 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 class Ex extends JFrame {
+	
 	public Ex() {
 		super("Ex");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
