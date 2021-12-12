@@ -40,7 +40,7 @@ class South extends JPanel {
 		setOpaque(true);
 		setBackground(Color.YELLOW);
 		
-		add(new JLabel("Word Input"));
+		add(new JButton("Word Input"));
 		add(new JTextField(15));
 	}
 }
@@ -53,7 +53,6 @@ class Ex extends JFrame {
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout());
 	
-		
 		c.add(new North(), BorderLayout.NORTH);
 		c.add(new Center(), BorderLayout.CENTER);
 		c.add(new South(), BorderLayout.SOUTH);
