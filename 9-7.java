@@ -18,10 +18,13 @@ class Center extends JPanel {
 		setOpaque(true);
 
 		JButton[] buttons = new JButton[16];
-		for(int i = 0; i < 12; i++) {
-			buttons[i] = new JButton(Integer.toString(i+1));
+		for(int i = 0; i < 10; i++) {
+			buttons[i] = new JButton(Integer.toString(i));
 			add(buttons[i]);
 		}
+		
+		add(new JButton("CE"));
+		add(new JButton("계산"));
 		
 		int c = 0;
 		String[] arr = {"+","-","*","/"};
@@ -43,7 +46,6 @@ class South extends JPanel {
 		add(new JTextField(15));
 	}
 }
-
 
 class Ex extends JFrame {
 	public Ex() {
